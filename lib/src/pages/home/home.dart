@@ -14,16 +14,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
-  List _items = [];
-
   String _hystoryData = "";
 
-  Future<void> readJson() async {
-    final String response = await rootBundle.loadString('test_table.json');
-    final data = await json.decode(response);
-    _items = data['data'];
-  }
+  // Future<void> readJson() async {
+  //   final String response = await rootBundle.loadString('test_table.json');
+  //   final data = await json.decode(response);
+  //   _items = data['data'];
+  // }
 
   @override
   void initState() {
@@ -52,7 +49,8 @@ class _HomePageState extends State<HomePage> {
                       onPressed: () {},
                       child: Row(
                         children: [
-                          Icon(Icons.account_tree_outlined, color: ColorProvider.primaryColor, size: 30),
+                          Icon(Icons.account_tree_outlined,
+                              color: ColorProvider.primaryColor, size: 30),
                           Padding(
                             padding: EdgeInsets.only(left: 20),
                             child: Text(
@@ -72,7 +70,8 @@ class _HomePageState extends State<HomePage> {
                       onPressed: () {},
                       child: Row(
                         children: [
-                          Icon(Icons.picture_as_pdf, color: ColorProvider.primaryColor, size: 30),
+                          Icon(Icons.picture_as_pdf,
+                              color: ColorProvider.primaryColor, size: 30),
                           Padding(
                             padding: EdgeInsets.only(left: 20),
                             child: Text(
@@ -92,7 +91,8 @@ class _HomePageState extends State<HomePage> {
                       onPressed: () {},
                       child: Row(
                         children: [
-                          Icon(Icons.supervised_user_circle_outlined, color: ColorProvider.primaryColor, size: 30),
+                          Icon(Icons.supervised_user_circle_outlined,
+                              color: ColorProvider.primaryColor, size: 30),
                           Padding(
                             padding: EdgeInsets.only(left: 20),
                             child: Text(
@@ -142,7 +142,8 @@ class _HomePageState extends State<HomePage> {
                                     jsonDecode(JsonDataProvider.jsonMainData),
                                     showColumnToggle: true,
                                     allowRowHighlight: true,
-                                    rowHighlightColor: Colors.yellow[500]!.withOpacity(0.7),
+                                    rowHighlightColor:
+                                        Colors.yellow[500]!.withOpacity(0.7),
                                     paginationRowCount: 20,
                                     onRowSelect: (index, map) {
                                       print(index);

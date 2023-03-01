@@ -1,4 +1,15 @@
 class JsonDataProvider {
+  //static final jsonMainData = ();
+
+/*  for (var table in excel.tables.keys) {
+  //print(excel.tables[table].maxCols);
+  //print(excel.tables[table].maxRows);
+  for (var row in excel.tables[table].rows) {
+  jsonMainData().
+    print("$row");
+  }
+  }*/
+
   static final jsonMainData = '['
       '{"Модель": "iRU 511MT", "Серийный номер": "123123awda232","Номер продукта": "awdajl2123adw2",'
       '"Инвентрный номер": 1,"ФИО": "Мамонтов Дональд Альвианович","Статус": "Выдан","Номер пломбы": 13,"Дата чистки": "21.02.23",'
@@ -59,7 +70,7 @@ class JsonDataProvider {
       '"Статус": "Склад","Номер пломбы": 22,"Дата чистки": "22.02.23"}]';
 
   static final jsonDetailData = {
-    "Серийный номер" : "123123awda232",
-    "Владельци" : "Бобров Ипполит Эдуардович, Коновалов Мартын Пантелеймонович"
+    "Серийный номер": "123123awda232",
+    "Владельци": "Бобров Ипполит Эдуардович, Коновалов Мартын Пантелеймонович"
   };
 }

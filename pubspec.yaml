@@ -39,6 +39,8 @@ dependencies:
   json_table: ^2.0.1
   excel_to_json: ^1.1.0
   excel: ^2.0.1
+  sqflite: any
+  path_provider: any
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +67,7 @@ flutter:
 
 assets:
   - assets/test_table.json
+  - assets/test_1.xlsx
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

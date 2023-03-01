@@ -13,12 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'ssk_resource_manager',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       initialRoute: '/',
       routes: {
-        '/' : (context) => const HomePage(),
+        '/': (context) => const HomePage(),
       },
     );
   }
