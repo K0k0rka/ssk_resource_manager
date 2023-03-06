@@ -50,19 +50,6 @@ class DBProvider {
     return res;
   }
 
-  getRecord(int id) async {
-    final db = await database;
-    var res = await db!.query("Record", where: "id = ?", whereArgs: [id]);
-    return res.isNotEmpty ? Record.fromMap(res.first) : Null;
-  }
-
-  updateRecord(Record newRecord) async {
-    final db = await database;
-    var res = await db?.update("Record", newRecord.toMap(),
-        where: "id = ?", whereArgs: [newRecord.id]);
-    return res;
-  }
-
   deleteRecord(int id) async {
     final db = await database;
     db?.delete("Record", where: "id = ?", whereArgs: [id]);
